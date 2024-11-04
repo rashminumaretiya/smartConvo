@@ -324,34 +324,40 @@ header {
   //   background-blend-mode: overlay;
   // }
   @keyframes move_wave_reverse {
-    0% {transform: translateX(0) translateZ(0);}
-    50% {transform: translateX(25%) translateZ(0);}
-    100% {transform: translateX(50%) translateZ(0);}
-}
+    0% {
+      transform: translateX(0) translateZ(0);
+    }
+    50% {
+      transform: translateX(25%) translateZ(0);
+    }
+    100% {
+      transform: translateX(50%) translateZ(0);
+    }
+  }
 
   .shape {
-    background-size: 50% 90px;
-    background-image: url('../images/png/hero-shape-border.png');
+    background-size: 50% 118px;
+    background-image: url("../images/png/hero-shape-border.png");
     background-repeat: repeat-x;
     background-position: 0 bottom;
     transform-origin: center bottom;
     z-index: 99;
     animation: move_wave_reverse 10s linear infinite;
     height: 118px;
-    width:200%;
+    width: 240%;
     right: 0;
     left: auto;
   }
   .shape2 {
     background-size: 50% 85px;
-    background-image: url('../images/png/hero-shape.png');
+    background-image: url("../images/png/hero-shape.png");
     background-repeat: repeat-x;
     background-position: 0 bottom;
     transform-origin: center bottom;
     z-index: 9;
     animation: move_wave_reverse 5s linear infinite;
     height: 85px;
-    width:200%;
+    width: 200%;
     right: 0;
     left: auto;
     margin-bottom: -1px;
