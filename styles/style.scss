@@ -118,7 +118,6 @@ ul {
   line-height: 16px;
 }
 .container {
-  max-width: 1400px;
 }
 
 img {
@@ -230,12 +229,10 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-
   .contact-side {
     .btn {
       min-width: 132px;
-      padding-top: 14px;
-      padding-bottom: 14px;
+      padding: 14px;
     }
   }
 
@@ -285,7 +282,6 @@ header {
 //hero section start
 .hero-section {
   background: url(/images/png/bg-hero-merge.png);
-  // mix-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -295,34 +291,6 @@ header {
   position: relative;
   z-index: 99;
   overflow: hidden;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   // background: url(../images/png/hero-shape-border.png);
-  //   background: url(../images/png/hero-bg-shape.png), rgba($light-blue, 0.8);
-  //   background-repeat: no-repeat;
-  //   background-position: left top;
-  //   z-index: -9;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: url(../images/png/hero-bg-shape-2.png), rgba($light-blue, 0.8);
-  //   background-repeat: no-repeat;
-  //   background-position: right top;
-  //   z-index: -9;
-  //   background-blend-mode: overlay;
-  // }
   @keyframes move_wave_reverse {
     0% {
       transform: translateX(0) translateZ(0);
@@ -373,7 +341,7 @@ header {
       margin-bottom: -22px;
     }
 
-    h4 {
+    h1 {
       font-size: 66px;
       font-weight: 500;
       line-height: 78.54px;
@@ -394,7 +362,10 @@ header {
 
     .hero-button {
       margin-top: 30px;
-
+      gap: 16px;
+      img {
+        margin-top: 2px;
+      }
       .btn-primary {
         padding: 14px 32px;
       }
@@ -410,17 +381,11 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  padding-right: 12%;
+  padding-right: 14%;
   display: flex;
   align-items: center;
   min-width: 526px;
   max-width: 526px;
-  @media screen and (max-width: 1399px) {
-    transform: scale(0.8);
-  }
-  @media screen and (max-width: 1239px) {
-    transform: scale(0.7);
-  }
   .logo-wrapper {
     position: absolute;
     top: 50%;
@@ -677,13 +642,11 @@ img.arrow {
     stroke-dashoffset: -200;
   }
 }
-//hero section end
-
-//CONERSATIONAL AND DOCUMENT AI start
 
 .productivity {
-  margin-bottom: 70px;
-  margin-top: 50px;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  overflow: hidden;
   .conversational-heading {
     .text {
       margin-bottom: 12px;
@@ -715,7 +678,7 @@ img.arrow {
       border-radius: 15px;
       background: linear-gradient(
         340deg,
-        rgba(219, 239, 251, 70%) 0%,
+        rgba(219, 239, 251, 30%) 0%,
         #5590b5 100%
       );
       z-index: -1;
@@ -732,13 +695,18 @@ img.arrow {
       font-size: 14px;
       color: $grey-100;
       line-height: 20.58px;
+      gap: 6px;
+      align-items: start;
+      img {
+        margin-top: 4px;
+      }
+    }
+    .btn-text {
+      margin: 16px 0 0 26px;
     }
   }
 }
 
-//CONERSATIONAL AND DOCUMENT AI end
-
-//GenAI start
 .enterprise-card {
   img {
     margin-bottom: 9px;
@@ -755,13 +723,11 @@ img.arrow {
   }
 }
 
-//GenAI end
-
 //data-driven start
 .data-driven {
   padding: 40px 0 40px 0;
   height: 100%;
-
+  overflow: hidden;
   [class*="col-"] {
     margin-bottom: 30px;
   }
@@ -796,11 +762,10 @@ img.arrow {
       padding: 20px 0 0 20px;
       background-color: $light-blue-200;
       border-radius: 15px;
-
-      h1 {
+      h6 {
         font-size: 26px;
         font-weight: 500;
-        line-height: 32.5px;
+        line-height: 1.25;
         color: $secondary;
         margin-bottom: 10px;
       }
@@ -835,12 +800,11 @@ img.arrow {
     }
   }
 }
-
-//data-driven end
 //offering-consulting start
 .offering-consulting {
   padding: 45px 0;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #f9fafb 100%),
     linear-gradient(
       280deg,
@@ -864,7 +828,7 @@ img.arrow {
     z-index: 99;
   }
 
-  h4 {
+  h3 {
     font-size: 46px;
     font-weight: 500;
     line-height: 55.2px;
@@ -885,6 +849,7 @@ img.arrow {
 //talking-about start
 .talking-about {
   padding: 70px 0;
+  overflow: hidden;
   .lg-heading {
     margin-bottom: 30px;
     line-height: 1.2;
@@ -903,6 +868,7 @@ img.arrow {
         width: 100%;
         max-width: 300px;
         flex: none;
+        overflow: hidden;
       }
 
       .talking-about-content {
@@ -913,7 +879,7 @@ img.arrow {
           font-family: $Inter;
           font-size: 22px;
           font-weight: 500;
-          line-height: 33.22px;
+          line-height: 1.51;
           margin-bottom: 18px;
         }
 
@@ -928,17 +894,14 @@ img.arrow {
         }
 
         .quate {
-          top: -31px;
           position: absolute;
+          top: -31px;
           left: -6px;
         }
       }
     }
   }
 }
-
-//talking-about end
-//offering-consulting end
 .talking-about-main-card {
   position: relative;
   padding: 30px 20px 35px;
@@ -956,11 +919,11 @@ img.arrow {
       color: $secondary;
       font-size: 20px;
       font-weight: 500;
-      line-height: 30px;
+      line-height: 1.5;
     }
 
     .text {
-      line-height: 24px;
+      line-height: 1.5;
     }
   }
 }
@@ -974,7 +937,6 @@ img.arrow {
   gap: 8px;
   bottom: -25px;
   z-index: 99;
-  background-color: $white;
   .prev,
   .next {
     span {
@@ -996,9 +958,9 @@ img.arrow {
 }
 
 // Gen AI Style
-
 .gen-ai-main {
   position: relative;
+  overflow: hidden;
   background: linear-gradient(
       277.44deg,
       #e9f6ff 1.35%,
@@ -1006,17 +968,28 @@ img.arrow {
       rgba(202, 233, 255, 0.06) 88.71%
     ),
     linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #f9fafb 100%);
+  overflow: hidden;
   padding-top: 40px;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    right: 0;
-    left: 0;
+  .shape {
+    background-size: 50% 90px;
     background-image: url("../images/png/gen-ai-shape3.png");
-    background-size: cover;
-    height: 133px;
-    z-index: 2;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: 99;
+    animation: move_wave_reverse 8s linear infinite;
+    height: 118px;
+    width: 230%;
+    right: 0;
+    left: auto;
+  }
+  .gen-ai-nav {
+    background-color: transparent;
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   .bg1 {
     position: absolute;
@@ -1053,16 +1026,18 @@ img.arrow {
   }
   .gen-ai-wrapper {
     box-shadow: 0px 928px 260px 0px #6685c200;
-    padding: 32px 56px 130px;
+    padding: 32px 56px 100px;
     background-color: $white;
     margin-top: 15px;
-    height: 693px;
+    height: 663px;
     position: relative;
     z-index: 1;
+    .main-slider {
+    }
     .slide-image {
       width: 100%;
       max-width: 90%;
-      height: 325px;
+      max-height: 325px;
       img {
         object-fit: cover;
         max-height: 325px;
@@ -1071,7 +1046,7 @@ img.arrow {
     .slide-content {
       margin-top: 17px;
       pointer-events: none;
-      h6 {
+      h5 {
         font-size: 30px;
         font-family: "ClashGrotesk-Medium";
         line-height: 1.29;
@@ -1118,8 +1093,11 @@ img.arrow {
     .icon {
       margin-left: 3.5px;
       margin-top: 11.5px;
+      img {
+        max-width: 98%;
+      }
     }
-    h6 {
+    h5 {
       margin: 0;
       margin-left: 16px;
       color: $secondary;
@@ -1129,23 +1107,32 @@ img.arrow {
       color: $secondary;
       margin-top: 28px;
     }
-    img {
-      max-width: 98%;
-    }
   }
   .outer-section {
     position: absolute;
     top: 50%;
     right: 92%;
     transform: translateY(-60%);
-    img {
+    .outer-img-wrapper {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 90px;
-      width: 90px;
-      object-fit: cover;
+      height: 87px;
+      width: 87px;
+      background-color: $white;
+      border-radius: 50%;
+      box-shadow: 0px 3px 5px #44498830;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-height: 60px;
+        max-width: 60px;
+        object-fit: cover;
+        margin-top: -6px;
+        margin-right: -6px;
+      }
     }
     .circle {
       circle {
@@ -1182,6 +1169,7 @@ img.arrow {
 // Generative AI
 .enterprise-ai-main {
   margin-top: 34px;
+  overflow: hidden;
   .lg-heading {
     margin-bottom: 50px;
   }
@@ -1332,13 +1320,14 @@ img.arrow {
       margin: 0 auto;
       background-color: $white;
       border-radius: 50%;
-      img {
+      svg {
         position: absolute;
         top: 0;
         left: 0;
         animation: rotate 4s linear infinite;
         transform-origin: center;
         height: 100%;
+        width: 100%;
       }
       @keyframes rotate {
         0% {
@@ -1357,7 +1346,7 @@ img.arrow {
         justify-content: center;
         background-color: $white;
         border-radius: 50%;
-        img {
+        svg {
           animation-duration: 5s;
         }
         .inner-circle {
@@ -1369,7 +1358,7 @@ img.arrow {
           justify-content: center;
           background-color: $white;
           border-radius: 50%;
-          img {
+          svg {
             animation-duration: 6s;
           }
           .inner-logo {
@@ -1391,6 +1380,7 @@ footer {
   background-color: $dark-blue100;
   padding-top: 50px;
   position: relative;
+  overflow: hidden;
   &::after {
     content: "";
     position: absolute;
@@ -1436,7 +1426,8 @@ footer {
       }
     }
     .card-content {
-      font-family: "ClashGrotesk-Medium";
+      font-family: $DMSans;
+      font-weight: 500;
       p {
         margin: 0;
         line-height: 1.3;
@@ -1457,6 +1448,7 @@ footer {
     align-items: start;
     margin-top: 40px;
     padding-bottom: 40px;
+    font-family: $Inter;
     .single-menu-list {
       width: 20%;
       h6 {
@@ -1464,6 +1456,7 @@ footer {
         color: $primary;
         margin-bottom: 18px;
         line-height: 1.5;
+        font-weight: 600;
       }
       ul {
         margin-top: 18px;
@@ -1494,6 +1487,43 @@ footer {
       }
     }
   }
+  .single-menu-list {
+    &.mobile-list {
+      padding-bottom: 40px;
+      font-family: $Inter;
+    }
+    h6 {
+      font-size: 20px;
+      color: $primary;
+      margin-bottom: 18px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    ul {
+      margin-top: 18px;
+      li {
+        color: rgba($light-blue-300, 0.8);
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+    }
+    .social-list {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      .social-icon {
+        background-color: rgba($primary, 0.3);
+        height: 36px;
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: inset 1px -2px 4px rgba(#8dcef6, 20%);
+      }
+    }
+  }
   .footer-lower {
     padding: 15px 0;
     border-top: 1px dashed #b7dff850;
@@ -1509,9 +1539,6 @@ footer {
     }
   }
 }
-
-// Beacon => 0:30 bug solve
-// Smart convo => landing pade design bug solving
 
 // Generetive AI
 .generetive-ai-main {
@@ -1605,7 +1632,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      h6 {
+      h4 {
         font-size: 30px;
         line-height: 1.29;
         color: $secondary;
