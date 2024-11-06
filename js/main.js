@@ -74,25 +74,65 @@ $("#gen-next").click(function () {
 
 AOS.init();
 
+function throttle(func, limit) {
+  let inThrottle;
+  return function () {
+    if (!inThrottle) {
+      func.apply(this, arguments);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+function handleAosDelay() {
+  const elements = document.querySelectorAll(".aos-element");
+  const isMobileView = window.innerWidth <= 768;
+
+  elements.forEach((element) => {
+    if (isMobileView) {
+      element.removeAttribute("data-aos-delay");
+    }
+  });
+}
+
+window.addEventListener("load", handleAosDelay);
+window.addEventListener("resize", throttle(handleAosDelay, 200));
+window.addEventListener("load", handleAosDelay);
+window.addEventListener("resize", handleAosDelay);
+
 // Nav bar Fuctionality
 document.addEventListener("click", function (event) {
   const navbarCollapse = document.querySelector(".navbar-collapse");
 
-  // Check if the clicked element is outside the navbar collapse and if it's currently open
   if (
     !navbarCollapse.contains(event.target) &&
     navbarCollapse.classList.contains("show")
   ) {
     navbarCollapse.classList.remove("show");
-    document.body.style.overflow = ""; // Remove overflow hidden when menu is closed
+    document.body.style.overflow = "";
   } else if (navbarCollapse.contains(event.target)) {
-    // Check if a link inside the navbar is clicked
     if (event.target.tagName === "A") {
       navbarCollapse.classList.remove("show");
-      document.body.style.overflow = ""; // Remove overflow hidden when menu is closed
+      document.body.style.overflow = ""; 
     } else {
       navbarCollapse.classList.add("show");
-      document.body.style.overflow = "hidden"; // Set overflow hidden when menu is open
+      document.body.style.overflow = "hidden";
     }
   }
 });
+
+// Pricing Section
+function togglePricing() {
+  const monthlyPlans = document.getElementById("monthlyPlans");
+  const annualPlans = document.getElementById("annualPlans");
+  const isChecked = document.getElementById("pricingToggle").checked;
+
+  if (isChecked) {
+    monthlyPlans.style.setProperty("display", "none", "important");
+    annualPlans.style.setProperty("display", "flex", "important");
+  } else {
+    monthlyPlans.style.setProperty("display", "flex", "important");
+    annualPlans.style.setProperty("display", "none", "important");
+  }
+}

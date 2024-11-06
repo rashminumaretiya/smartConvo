@@ -23982,7 +23982,7 @@ header .nav-item .dropdown-toggle {
   width: 100%;
   height: auto;
   position: relative;
-  padding-right: 14%;
+  padding-right: 12%;
   display: flex;
   align-items: center;
   min-width: 526px;
@@ -25020,12 +25020,15 @@ footer .footer-middle .single-menu-list ul {
   margin-top: 18px;
 }
 footer .footer-middle .single-menu-list ul li {
-  color: rgba(219, 239, 251, 0.8);
   margin-bottom: 15px;
   cursor: pointer;
 }
 footer .footer-middle .single-menu-list ul li:last-of-type {
   margin: 0;
+}
+footer .footer-middle .single-menu-list ul li a {
+  color: rgba(219, 239, 251, 0.8);
+  text-decoration: none;
 }
 footer .footer-middle .single-menu-list .social-list {
   display: flex;
@@ -25080,7 +25083,7 @@ footer .single-menu-list .social-list .social-icon {
 }
 footer .footer-lower {
   padding: 15px 0;
-  border-top: 1px dashed rgba(183, 223, 248, 0.3137254902);
+  border-top: 1px dashed rgba(183, 223, 248, 0.5);
   font-family: "ClashGrotesk-Medium";
   color: rgba(219, 239, 251, 0.8);
   text-align: center;
@@ -25195,4 +25198,226 @@ footer .footer-lower a {
 }
 .generetive-ai-main .tab-content .tab-body .tab-image {
   margin-top: 30px;
+}
+
+.main {
+  position: relative;
+  padding-top: 160px;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 432px;
+  width: 100%;
+  background: linear-gradient(180deg, #ddf1fd -46.06%, #ffffff 104.6%);
+  z-index: -1;
+}
+
+.pricing-section-main {
+  padding-bottom: 70px;
+}
+.pricing-section-main .lg-heading {
+  margin-bottom: 15px;
+  line-height: 1.15;
+}
+.pricing-section-main .text {
+  max-width: 80%;
+  margin: 0 auto 44px;
+}
+.pricing-section-main .switch-main {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 25px;
+  background-color: rgba(219, 239, 251, 0.5);
+  padding: 14px 16px;
+  gap: 10px;
+  border-radius: 100px;
+}
+.pricing-section-main .switch-main span {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #51657d;
+}
+.pricing-section-main .switch-main .switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+.pricing-section-main .switch-main .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.pricing-section-main .switch-main .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.pricing-section-main .switch-main .switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 2px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.pricing-section-main .switch-main .switch input:checked + .slider {
+  background-color: #158bd4;
+}
+.pricing-section-main .switch-main .switch input:checked + .slider:before {
+  transform: translateX(15px);
+}
+.pricing-section-main .pricing-card-main {
+  display: flex;
+  gap: 16px;
+}
+.pricing-section-main .pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 24px 20px;
+  border-radius: 8px;
+  border: 1px solid #dbeffb;
+  border-top: 3px solid #b7dff8;
+  font-family: "Inter", sans-serif;
+  color: #0c2544;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  width: calc(25% - 8px);
+  background-color: #ffffff;
+}
+.pricing-section-main .pricing-card:nth-of-type(2) {
+  border-top-color: #f89a20;
+}
+.pricing-section-main .pricing-card:nth-of-type(3) {
+  border-top-color: #10b981;
+}
+.pricing-section-main .pricing-card:nth-of-type(4) {
+  border-top-color: #aa0bf5;
+}
+.pricing-section-main .pricing-card p,
+.pricing-section-main .pricing-card h4,
+.pricing-section-main .pricing-card .h4,
+.pricing-section-main .pricing-card h6,
+.pricing-section-main .pricing-card .h6 {
+  margin: 0;
+}
+.pricing-section-main .pricing-card .pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pricing-section-main .pricing-card .price-main h4, .pricing-section-main .pricing-card .price-main .h4 {
+  font-size: 32px;
+  line-height: 23px;
+  font-weight: 700;
+}
+.pricing-section-main .pricing-card .price-main p {
+  line-height: 1.15;
+  margin-left: 6px;
+  font-size: 12px;
+}
+.pricing-section-main .pricing-card .plan-name h6, .pricing-section-main .pricing-card .plan-name .h6 {
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+.pricing-section-main .pricing-card .plan-name p {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.pricing-section-main .pricing-card .btn-outline {
+  margin-top: 30px;
+  padding: 13px 40px;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid #dbeffb;
+  color: #0c2544;
+}
+.pricing-section-main .pricing-card .btn-outline:hover {
+  background-color: #0c2544;
+  border-color: transparent;
+  color: #ffffff;
+}
+.pricing-section-main .pricing-card .advantage-list .content-head {
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 13px;
+}
+.pricing-section-main .pricing-card .advantage-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+  color: #51657d;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.pricing-section-main .pricing-card .advantage-list ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.faq-section-main {
+  padding-bottom: 70px;
+}
+.faq-section-main .accordion .accordion-item {
+  border: 0;
+  border-radius: 8px;
+  border: 1px solid #158bd4;
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 14px;
+}
+.faq-section-main .accordion .accordion-item:last-of-type {
+  margin-bottom: 0;
+}
+.faq-section-main .accordion .accordion-item:has(* > .collapsed) {
+  border-color: transparent;
+  border-bottom: 1px solid #b7dff8;
+}
+.faq-section-main .accordion .accordion-button {
+  padding: 18px 24px;
+  color: #0c2544;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.faq-section-main .accordion .accordion-button::after {
+  background-size: contain;
+  height: 15px;
+  width: 10px;
+  background-image: url("../images/svg/right-arrow-3.svg");
+}
+.faq-section-main .accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.faq-section-main .accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(-90deg);
+}
+.faq-section-main .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-section-main .accordion .accordion-body {
+  color: #51657d;
+  line-height: 1.5;
+  padding: 0 24px 25px;
 }/*# sourceMappingURL=style.css.map */

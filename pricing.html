@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartConvo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/slick-theme.css" />
+    <link rel="stylesheet" href="/styles/slick.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+</head>
+
+<body>
+
+    <!-- #HEADER SECTION  -->
+    <header class="py-3" data-aos="fade">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container">
+                <a class="navbar-brand p-0" href="index.html">
+                    <img src="./images/svg/logo.svg" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-0">
+                        <li class="nav-item dropdown">
+                            <div class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Developer
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Integrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Resource</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                    </ul>
+                    <form class="contact-side d-flex gap-2" role="search">
+                        <button class="btn btn-light rounded-pill lh-1" type="submit">
+                            Log in
+                        </button>
+                        <button class="btn btn-secondary rounded-pill lh-1" type="submit">
+                            Sign Up
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="pricing-section-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9  text-center">
+                        <h2 class="lg-heading" data-aos="fade">Flexible, <span class="text-gradient">growth-driven
+                                pricing</span>
+                            designed
+                            to
+                            scale with your needs.</h2>
+                        <p class="text" data-aos="fade">We provide a range of plans tailored to meet your requirements.
+                            Whether you're
+                            just starting out or representing a large organization, we have the right plan for you.</p>
+                    </div>
+                </div>
+                <div class="pricing-wrapper">
+                    <div class="switch-main" data-aos="fade-up">
+                        <span>Billed monthly</span>
+                        <label class="switch">
+                            <input type="checkbox" id="pricingToggle" onclick="togglePricing()">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Billed yearly</span>
+                    </div>
+
+                    <div class="pricing-card-main" id="monthlyPlans">
+                        <div class="pricing-card" data-aos="fade-up">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Free</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$0</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">What you get:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>1 chatbot
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            2,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            500,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            Model GPT-3.5
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            API Access Subscribe
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="50">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Starter</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$8</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All free features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Kanban Boards
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Gantt Charts
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Resource Allocation
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Calendar Integration
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Progress Tracking
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Business</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$16</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All starter features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>5 chatbots
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>15,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>2,000,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Model GPT-3.5 & GPT-4
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>API Access
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Daily auto-sync
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card" data-aos="fade-up" data-aos-delay="150">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Enterprise</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>Custom</h4>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All business features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>50 chatbots
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>100,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>50,000,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Model GPT-3.5 & GPT-4
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>API Access
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Remove Powered by Userdesk
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Daily auto-sync Subscribe
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                    </div>
+                    <div class="pricing-card-main d-none" id="annualPlans">
+                        <div class="pricing-card">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Free</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$0</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">What you get:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>1 chatbot
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            2,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            500,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            Model GPT-3.5
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>
+                                            API Access Subscribe
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Starter</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$10</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All free features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Kanban Boards
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Gantt Charts
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Resource Allocation
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Calendar Integration
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Progress Tracking
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Business</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>$20</h4>
+                                    <p>
+                                        / month
+                                    </p>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All starter features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>5 chatbots
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>15,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>2,000,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Model GPT-3.5 & GPT-4
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>API Access
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Daily auto-sync
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                        <div class="pricing-card">
+                            <div class="pricing-wrapper">
+                                <div class="plan-name">
+                                    <h6>Enterprise</h6>
+                                    <p>Best for personal use</p>
+                                </div>
+                                <div class="d-flex align-items-end price-main">
+
+                                    <h4>Custom</h4>
+                                </div>
+                                <div class="advantage-list">
+                                    <p class="content-head">All business features, plus:</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>50 chatbots
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>100,000 AI messages per month
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>50,000,000 training words
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Model GPT-3.5 & GPT-4
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>API Access
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Remove Powered by Userdesk
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <img src="./images/svg/pricing-check.svg" alt="check" />
+                                            </div>Daily auto-sync Subscribe
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Unlock Free Access</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-section-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9  text-center">
+                        <h2 class="lg-heading" data-aos="fade-up">Frequency <span class="text-gradient">Asked
+                                Questions</span></h2>
+                        <p class="text" data-aos="fade-up">We provide a range of plans tailored to meet your
+                            requirements. Whether you're
+                            just starting out or representing a large organization, we have the right plan for you.</p>
+                    </div>
+                </div>
+                <div class="accordion row" id="faq-accordion">
+                    <div class="col-6">
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. Can I test ChatBot for free?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Does installing ChatBot on a website require coding?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. Are technical skills required to create an advanced chatbot?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4. What is a chatbot?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5. Can ChatBot be integrated with LiveChat?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6. Can one chatbot be connected with multiple channels?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    7. How does a generative AI chatbot work?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    8. What are AI-powered customer service bots?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    9. How do chatbots contribute to marketing efforts?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Yes, you can test the chatbot for free! We offer a free trial to explore its
+                                    features
+                                    and see how it fits your needs before committing to a paid plan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container position-relative z-1">
+            <div class="footer-top">
+                <div class="row position-relative z-1 row-gap-3 row-gap-md-4">
+                    <div class="col-md-6 col-xl-3" data-aos="fade">
+                        <div class="footer-top-card d-flex">
+                            <div class="card-icon">
+                                <img src="./images/svg/handshake.svg" alt="" />
+                            </div>
+                            <div class="card-content">
+                                <p class="head">HelpDesk</p>
+                                <p class="description">
+                                    Assist customers through a ticketing system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3" data-aos="fade" data-aos-delay="50">
+                        <div class="footer-top-card d-flex">
+                            <div class="card-icon">
+                                <img src="./images/svg/message.svg" alt="" />
+                            </div>
+                            <div class="card-content">
+                                <p class="head">LiveChat</p>
+                                <p class="description">
+                                    Build relationships with your clients
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3" data-aos="fade" data-aos-delay="100">
+                        <div class="footer-top-card d-flex">
+                            <div class="card-icon">
+                                <img src="./images/svg/knowledge.svg" alt="" />
+                            </div>
+                            <div class="card-content">
+                                <p class="head">KnowledgeBase</p>
+                                <p class="description">
+                                    Lead and provide insights to clients
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3" data-aos="fade" data-aos-delay="150">
+                        <div class="footer-top-card d-flex">
+                            <div class="card-icon">
+                                <img src="./images/svg/open-widget.svg" alt="" />
+                            </div>
+                            <div class="card-content">
+                                <p class="head">OpenWidget</p>
+                                <p class="description">
+                                    Boost site functionality with custom widgets
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="single-menu-list" data-aos="fade">
+                    <h6>Solutions</h6>
+                    <ul>
+                        <li><a>Marketing</a></li>
+                        <li><a>Customer Support</a></li>
+                        <li><a>Sales</a></li>
+                        <li><a>Education</a></li>
+                    </ul>
+                </div>
+                <div class="single-menu-list" data-aos="fade" data-aos-delay="50">
+                    <h6>Product</h6>
+                    <ul>
+                        <li><a href="pricing.html">Pricing </a></li>
+                        <li><a>AI Chatbot</a></li>
+                        <li><a>Live Chat</a></li>
+                        <li><a>Help Desk</a></li>
+                        <li><a>Features</a></li>
+                        <li><a>Product Demo</a></li>
+                        <li><a>Visual Builder</a></li>
+                        <li><a>Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="single-menu-list" data-aos="fade" data-aos-delay="100">
+                    <h6>Integrations</h6>
+                    <ul>
+                        <li><a>Chat Widget</a></li>
+                        <li><a>Live Chat</a></li>
+                        <li><a>Help Desk</a></li>
+                        <li><a>Facebook Messenger</a></li>
+                        <li><a>Slack</a></li>
+                        <li><a>Shopify</a></li>
+                        <li><a>WordPress</a></li>
+                        <li><a>Zapier</a></li>
+                    </ul>
+                </div>
+                <div class="single-menu-list" data-aos="fade" data-aos-delay="150">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a>Help Center</a></li>
+                        <li><a>API & Developers</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>System Status</a></li>
+                    </ul>
+                </div>
+                <div class="single-menu-list d-none d-md-block" data-aos="fade" data-aos-delay="200">
+                    <h6>Contact</h6>
+                    <ul>
+                        <li>Email : contact@smartconvo.com</li>
+                    </ul>
+                    <div class="social-list">
+                        <a href="#" class="social-icon">
+                            <img src="./images/svg/skype.svg" alt="" />
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./images/svg/linkedin.svg" alt="" />
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./images/svg/facebook.svg" alt="" />
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="./images/svg/twitter.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-menu-list d-block d-md-none mobile-list" data-aos="fade" data-aos-delay="200">
+                <h6>Contact</h6>
+                <ul>
+                    <li>Email : contact@smartconvo.com</li>
+                </ul>
+                <div class="social-list">
+                    <a href="#" class="social-icon">
+                        <img src="./images/svg/skype.svg" alt="" />
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images/svg/linkedin.svg" alt="" />
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images/svg/facebook.svg" alt="" />
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images/svg/twitter.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <p>© 2024 All rights reserved by <a href="">SmartConvo</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/main.js"></script>
+
+</html>

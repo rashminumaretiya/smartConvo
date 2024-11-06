@@ -19,6 +19,7 @@ $light: #ffffff;
 $light-blue: #f0f8fc;
 $light-blue-200: #f3f8fc;
 $light-blue-300: #dbeffb;
+$light-blue-400: #b7dff8;
 $cyan-blue: #93cff4;
 $yellow: #f89a20;
 $white: #ffffff;
@@ -381,7 +382,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  padding-right: 14%;
+  padding-right: 12%;
   display: flex;
   align-items: center;
   min-width: 526px;
@@ -1461,11 +1462,14 @@ footer {
       ul {
         margin-top: 18px;
         li {
-          color: rgba($light-blue-300, 0.8);
           margin-bottom: 15px;
           cursor: pointer;
           &:last-of-type {
             margin: 0;
+          }
+          a {
+            color: rgba($light-blue-300, 0.8);
+            text-decoration: none;
           }
         }
       }
@@ -1526,7 +1530,7 @@ footer {
   }
   .footer-lower {
     padding: 15px 0;
-    border-top: 1px dashed #b7dff850;
+    border-top: 1px dashed rgba($light-blue-400, 0.5);
     font-family: "ClashGrotesk-Medium";
     color: rgba($light-blue-300, 0.8);
     text-align: center;
@@ -1653,6 +1657,238 @@ footer {
       .tab-image {
         margin-top: 30px;
       }
+    }
+  }
+}
+
+// ========== Pricing Page style =========== //
+.main {
+  position: relative;
+  padding-top: 160px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 432px;
+    width: 100%;
+    background: linear-gradient(180deg, #ddf1fd -46.06%, #ffffff 104.6%);
+    z-index: -1;
+  }
+}
+
+// Pricing Styles
+.pricing-section-main {
+  padding-bottom: 70px;
+  .lg-heading {
+    margin-bottom: 15px;
+    line-height: 1.15;
+  }
+  .text {
+    max-width: 80%;
+    margin: 0 auto 44px;
+  }
+  .switch-main {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto 25px;
+    background-color: rgba($light-blue-300, 0.5);
+    padding: 14px 16px;
+    gap: 10px;
+    border-radius: 100px;
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      font-family: $Inter;
+      color: $grey-100;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 24px;
+        &::before {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: 3px;
+          bottom: 2px;
+          background-color: $white;
+          transition: 0.4s;
+          border-radius: 50%;
+        }
+      }
+
+      input:checked + .slider {
+        background-color: $primary;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(15px);
+      }
+    }
+  }
+  .pricing-card-main {
+    display: flex;
+    gap: 16px;
+  }
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 24px 20px;
+    border-radius: 8px;
+    border: 1px solid $light-blue-300;
+    border-top: 3px solid $light-blue-400;
+    font-family: $Inter;
+    color: $secondary;
+    break-inside: avoid;
+    width: calc(25% - 8px);
+    background-color: $white;
+    &:nth-of-type(2) {
+      border-top-color: $yellow;
+    }
+    &:nth-of-type(3) {
+      border-top-color: #10b981;
+    }
+    &:nth-of-type(4) {
+      border-top-color: #aa0bf5;
+    }
+    p,
+    h4,
+    h6 {
+      margin: 0;
+    }
+    .pricing-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .price-main {
+      h4 {
+        font-size: 32px;
+        line-height: 23px;
+        font-weight: 700;
+      }
+      p {
+        line-height: 1.15;
+        margin-left: 6px;
+        font-size: 12px;
+      }
+    }
+    .plan-name {
+      h6 {
+        font-size: 20px;
+        line-height: 1.15;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 1.25;
+      }
+    }
+    .btn-outline {
+      margin-top: 30px;
+      padding: 13px 40px;
+      border-radius: 50px;
+      font-weight: 500;
+      border: 1px solid $light-blue-300;
+      color: $secondary;
+      &:hover {
+        background-color: $secondary;
+        border-color: transparent;
+        color: $white;
+      }
+    }
+    .advantage-list {
+      .content-head {
+        font-weight: 600;
+        line-height: 1.15;
+        margin-bottom: 13px;
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 13px;
+          color: $grey-100;
+          font-size: 14px;
+          line-height: 1.25;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// FAQ Styles
+.faq-section-main {
+  padding-bottom: 70px;
+  .accordion {
+    .accordion-item {
+      border: 0;
+      border-radius: 8px;
+      border: 1px solid $primary;
+      overflow: hidden;
+      height: fit-content;
+      font-family: $Inter;
+      margin-bottom: 14px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:has(* > .collapsed) {
+        border-color: transparent;
+        border-bottom: 1px solid $light-blue-400;
+      }
+    }
+    .accordion-button {
+      padding: 18px 24px;
+      color: $secondary;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.2;
+      &::after {
+        background-size: contain;
+        height: 15px;
+        width: 10px;
+        background-image: url("../images/svg/right-arrow-3.svg");
+      }
+      &:not(.collapsed) {
+        background-color: transparent;
+        box-shadow: none;
+        &::after {
+          transform: rotate(-90deg);
+        }
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .accordion-body {
+      color: $grey-100;
+      line-height: 1.5;
+      padding: 0 24px 25px;
     }
   }
 }

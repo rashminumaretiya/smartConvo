@@ -17,6 +17,9 @@
   }
 }
 @media screen and (max-width: 1399px) {
+  .hero-circle-wrapper {
+    padding-right: 14%;
+  }
   .lg-heading {
     font-size: 42px;
     line-height: 50px;
@@ -157,6 +160,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .aos-animate {
+    transition-delay: 0s !important;
+  }
   .lg-heading {
     font-size: 36px;
     line-height: 44px;
@@ -184,16 +190,6 @@
   }
   .navbar-collapse.show {
     right: 0;
-  }
-  .navbar-collapse.show::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 100dvh;
   }
   .navbar-collapse .navbar-nav {
     padding: 0 16px;
