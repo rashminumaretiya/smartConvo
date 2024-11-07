@@ -25423,4 +25423,12 @@ footer .footer-lower a {
   color: #51657d;
   line-height: 1.5;
   padding: 0 24px 25px;
+}
+.faq-section-main .faq-arrow {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translateY(-65%);
+  width: 100%;
+  max-width: 320px;
 }/*# sourceMappingURL=style.css.map */

@@ -17,6 +17,13 @@
   }
 }
 @media screen and (max-width: 1399px) {
+  .faq-section-main .faq-arrow {
+    max-width: 250px;
+    left: 98%;
+  }
+  .faq-section-main .accordion .accordion-button {
+    line-height: 1.4;
+  }
   .hero-circle-wrapper {
     padding-right: 14%;
   }
@@ -70,6 +77,9 @@
   }
 }
 @media screen and (max-width: 1199px) {
+  .faq-section-main .faq-arrow {
+    display: none;
+  }
   .lg-heading {
     font-size: 40px;
     line-height: 48px;
@@ -191,9 +201,6 @@
   .faq-section-main .accordion {
     gap: 14px 0;
     margin-top: 15px;
-  }
-  .faq-section-main .accordion .accordion-button {
-    line-height: 1.4;
   }
   .lg-heading {
     font-size: 36px;

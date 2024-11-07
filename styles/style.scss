@@ -1892,4 +1892,12 @@ footer {
       padding: 0 24px 25px;
     }
   }
+  .faq-arrow {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-65%);
+    width: 100%;
+    max-width: 320px;
+  }
 }
