@@ -25376,6 +25376,9 @@ footer .footer-lower a {
 .faq-section-main {
   padding-bottom: 70px;
 }
+.faq-section-main .accordion {
+  margin-top: 30px;
+}
 .faq-section-main .accordion .accordion-item {
   border: 0;
   border-radius: 8px;

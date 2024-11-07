@@ -58,6 +58,16 @@
     transform: scale(0.8);
     margin-top: 90px;
   }
+  .pricing-card-main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing-card-main .pricing-card {
+    width: calc(33.33% - 11px);
+  }
+  .pricing-card-main .pricing-card.aos-animate {
+    transition-delay: 0 !important;
+  }
 }
 @media screen and (max-width: 1199px) {
   .lg-heading {
@@ -160,8 +170,30 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .main {
+    padding-top: 140px;
+  }
   .aos-animate {
     transition-delay: 0s !important;
+  }
+  .pricing-card-main .pricing-card {
+    width: calc(50% - 8px);
+  }
+  .pricing-section-main {
+    padding-bottom: 50px;
+  }
+  .pricing-section-main .text {
+    margin: 0 auto 25px;
+  }
+  .faq-section-main {
+    padding-bottom: 50px;
+  }
+  .faq-section-main .accordion {
+    gap: 14px 0;
+    margin-top: 15px;
+  }
+  .faq-section-main .accordion .accordion-button {
+    line-height: 1.4;
   }
   .lg-heading {
     font-size: 36px;
@@ -327,6 +359,15 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .main {
+    padding-top: 120px;
+  }
+  .pricing-section-main .text {
+    max-width: 100%;
+  }
+  .pricing-section-main .pricing-card-main .pricing-card {
+    width: 100%;
+  }
   .btn {
     font-size: 14px;
   }
@@ -469,8 +510,43 @@
   .generetive-ai-main .tab-content .tab-body p {
     font-size: 14px;
   }
+  .faq-section-main .accordion .accordion-button {
+    padding: 16px;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .faq-section-main .accordion .accordion-body {
+    padding: 0 16px 16px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 575px) {
+  .pricing-section-main .pricing-card .pricing-wrapper {
+    gap: 25px 0;
+  }
+  .pricing-section-main .pricing-card .plan-name h6 {
+    font-size: 18px;
+  }
+  .pricing-section-main .pricing-card .advantage-list p {
+    font-size: 15px;
+  }
+  .pricing-section-main .pricing-card .advantage-list ul li {
+    font-size: 13px;
+  }
+  .pricing-section-main .pricing-card .advantage-list ul li img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  .pricing-section-main .pricing-card .price-main h4 {
+    font-size: 26px;
+  }
+  .faq-section-main .accordion .accordion-button {
+    padding: 14px;
+    font-size: 15px;
+  }
+  .faq-section-main .accordion .accordion-body {
+    padding: 0 14px 14px;
+  }
   .hero-check li {
     font-size: 14px;
   }
