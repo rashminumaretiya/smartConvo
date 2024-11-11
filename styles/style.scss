@@ -1901,3 +1901,115 @@ footer {
     max-width: 320px;
   }
 }
+
+///// About Page
+.all-in-one-section {
+  padding-bottom: 25px;
+  .lg-heading {
+    margin-bottom: 15px;
+  }
+  .text {
+    max-width: 800px;
+    margin: 0 auto 35px;
+  }
+  .aio-content {
+    font-family: $Inter;
+    max-width: 94%;
+    h6 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+    p {
+      color: rgba($secondary, 0.7);
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 18px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      span {
+        color: $primary;
+      }
+    }
+  }
+  .aio-image {
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+// Logo Slider
+.logo-slider-main {
+  padding-bottom: 45px;
+}
+
+// Motivation style
+.motivation-main {
+  padding-bottom: 60px;
+  .lg-heading {
+    margin-bottom: 20px;
+  }
+  p {
+    max-width: 90%;
+    margin: 0 auto 14px;
+    color: rgba($secondary, 0.7);
+    font-weight: 500;
+    line-height: 1.47;
+    span {
+      color: $primary;
+    }
+  }
+}
+
+// Find what
+.find-what-main {
+  padding-bottom: 60px;
+  .lg-heading {
+    margin-bottom: 15px;
+  }
+  .text {
+    margin-bottom: 25px;
+  }
+  .find-box {
+    padding: 20px 20px 24px;
+    border-radius: 10px;
+    border: 1px solid $primary;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .icon-box {
+      border-radius: 10px;
+      background-color: rgba($light-blue-300, 0.5);
+      margin-bottom: 15px;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-text {
+      width: fit-content;
+      margin-top: auto;
+    }
+    .find-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      h5 {
+        font-size: 26px;
+        line-height: 1.25;
+        font-family: "ClashGrotesk-Medium";
+        margin-bottom: 5px;
+      }
+      p {
+        color: rgba($secondary, 0.7);
+        opacity: 0.8;
+        margin-bottom: 8px;
+        font-family: $Inter;
+        font-weight: 500;
+      }
+    }
+  }
+}

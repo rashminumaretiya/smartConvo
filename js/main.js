@@ -63,6 +63,34 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".logo-slider").slick({
+    slidesToShow: 4.99,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
 });
 $("#gen-prev").click(function () {
   $(".thumbnail-slider").slick("slickPrev");
@@ -114,7 +142,7 @@ document.addEventListener("click", function (event) {
   } else if (navbarCollapse.contains(event.target)) {
     if (event.target.tagName === "A") {
       navbarCollapse.classList.remove("show");
-      document.body.style.overflow = ""; 
+      document.body.style.overflow = "";
     } else {
       navbarCollapse.classList.add("show");
       document.body.style.overflow = "hidden";

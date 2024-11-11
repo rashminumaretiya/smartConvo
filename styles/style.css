@@ -25431,4 +25431,111 @@ footer .footer-lower a {
   transform: translateY(-65%);
   width: 100%;
   max-width: 320px;
+}
+
+.all-in-one-section {
+  padding-bottom: 25px;
+}
+.all-in-one-section .lg-heading {
+  margin-bottom: 15px;
+}
+.all-in-one-section .text {
+  max-width: 800px;
+  margin: 0 auto 35px;
+}
+.all-in-one-section .aio-content {
+  font-family: "Inter", sans-serif;
+  max-width: 94%;
+}
+.all-in-one-section .aio-content h6, .all-in-one-section .aio-content .h6 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+.all-in-one-section .aio-content p {
+  color: rgba(12, 37, 68, 0.7);
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.all-in-one-section .aio-content p:last-of-type {
+  margin-bottom: 0;
+}
+.all-in-one-section .aio-content p span {
+  color: #158bd4;
+}
+.all-in-one-section .aio-image img {
+  border-radius: 10px;
+}
+
+.logo-slider-main {
+  padding-bottom: 45px;
+}
+
+.motivation-main {
+  padding-bottom: 60px;
+}
+.motivation-main .lg-heading {
+  margin-bottom: 20px;
+}
+.motivation-main p {
+  max-width: 90%;
+  margin: 0 auto 14px;
+  color: rgba(12, 37, 68, 0.7);
+  font-weight: 500;
+  line-height: 1.47;
+}
+.motivation-main p span {
+  color: #158bd4;
+}
+
+.find-what-main {
+  padding-bottom: 60px;
+}
+.find-what-main .lg-heading {
+  margin-bottom: 15px;
+}
+.find-what-main .text {
+  margin-bottom: 25px;
+}
+.find-what-main .find-box {
+  padding: 20px 20px 24px;
+  border-radius: 10px;
+  border: 1px solid #158bd4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.find-what-main .find-box .icon-box {
+  border-radius: 10px;
+  background-color: rgba(219, 239, 251, 0.5);
+  margin-bottom: 15px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find-what-main .find-box .btn-text {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+}
+.find-what-main .find-box .find-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.find-what-main .find-box .find-content h5, .find-what-main .find-box .find-content .h5 {
+  font-size: 26px;
+  line-height: 1.25;
+  font-family: "ClashGrotesk-Medium";
+  margin-bottom: 5px;
+}
+.find-what-main .find-box .find-content p {
+  color: rgba(12, 37, 68, 0.7);
+  opacity: 0.8;
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

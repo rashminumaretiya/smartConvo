@@ -75,6 +75,9 @@
   .pricing-card-main .pricing-card.aos-animate {
     transition-delay: 0 !important;
   }
+  .all-in-one-section .aio-content p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .faq-section-main .faq-arrow {
@@ -180,6 +183,26 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .all-in-one-section .aio-image {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .all-in-one-section .aio-content h6 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .all-in-one-section .aio-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  .find-what-main .find-box .find-content p {
+    font-size: 14px;
+  }
+  .motivation-main p {
+    margin: 0 0 14px;
+    max-width: 100%;
+  }
   .main {
     padding-top: 140px;
   }
@@ -366,6 +389,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .all-in-one-section .aio-content p {
+    font-size: 14px;
+  }
   .main {
     padding-top: 120px;
   }
@@ -673,6 +699,9 @@
   }
   .enterprise-ai-main .row > * {
     width: 100%;
+  }
+  .all-in-one-section .aio-image {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 399px) {
